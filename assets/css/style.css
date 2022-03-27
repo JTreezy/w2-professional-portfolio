@@ -1,0 +1,31 @@
+body {
+    background-color: salmon;
+}
+
+header{
+    display: flex;
+    flex-flow: column;
+    background: skyblue;
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+}
+
+h1 {
+    margin-left: 20px;
+    margin-bottom: 1rem;
+    border: 3px solid black;
+}
+
+header ul {
+    list-style-type: none;
+    margin-top: 2px;
+    align-items: flex-end;
+}
+
+img {
+    width: 100%;
+}
