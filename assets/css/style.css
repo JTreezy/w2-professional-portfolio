@@ -1,31 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+}
+
 body {
-    background-color: salmon;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRucRqyE9f4Ymn-U_YD_bqscy5KQAaHPBr4gQ&usqp=CAU");
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-right: 3px solid white;
+    margin-right: 30px;
 }
 
 header{
     display: flex;
-    flex-flow: column;
-    background: skyblue;
-    margin-top: -10px;
-    margin-right: -10px;
-    margin-left: -10px;
-    align-items: flex-start;
     list-style: none;
     padding: 0;
+    height: 60px;
+    align-items: center;
+}
+
+header nav {
+    position: relative;
+    float: right;
+    text-align: right;
+    width: 100%;
 }
 
 h1 {
-    margin-left: 20px;
-    margin-bottom: 1rem;
+    display: flex;
     border: 3px solid black;
+    height: 20px;
+    align-items: center;
+    margin-left: 5px;
+    width: 150px; 
+    justify-content: center;
+
 }
+
 
 header ul {
+    display: flex;
+    border-width: 100%;
     list-style-type: none;
-    margin-top: 2px;
-    align-items: flex-end;
+    top: 0;
+    align-items: center;
+    justify-content: right;
+    
 }
 
-img {
+header li {
+    margin: 6px;
+    padding: 5px;
+}
+
+#header2 {
     width: 100%;
+}
+
+.about-me-contents {
+    display: flex;
+}
+
+.work-contents {
+    display: flex;
+}
+
+.primary-work-card{
+    flex-grow: 1;
+}
+
+.work-card {
+    display: flex;
+    background-color: salmon;
+}
+
+
+.contact-me-contents {
+    display: flex;
+    background-color:violet;
+    border-radius: 30px;
+}
+
+#about-me img {
+    margin: 30px;
+}
+
+p {
+    margin: 30px;
+}
+
+
+h4 {
+    padding: 10px;
+}
+
+#about-me {
+    display: flex;
+}
+
+#work{
+    display: flex;
+    padding: 10px;
+}
+
+h3 {
+    position: absolute;
+    color:brown;
+    left: 90%;
+    bottom: 80%;
+    
+    -webkit-transition: color 2s;
+    transition: color 2s;
+}
+
+h3:hover{
+    color:rgb(68, 0, 255);
+    border-bottom: 2x solid black;
+    border-radius: 10px;
+    background-color:aquamarine;
+    padding: 10px 10px;
+    box-shadow: 12px 5px 2px 1px gold;
+}
+
+#contact-me {
+    display: flex;
+    margin-top: 5px;
+}
+
+a {
+    -webkit-transition: color 2s;
+    transition: color 2s;
+}
+
+a:hover {
+    color:rgb(68, 0, 255);
+    border-radius: 10px;
+    background-color:aquamarine;
+    padding: 10px 10px;
+    box-shadow: 12px 5px 2px 1px gold;
+}
+
+#contact-me ul{
+    padding: 10px;
+}
+
+#contact-me li{
+    margin: 30px;
 }
