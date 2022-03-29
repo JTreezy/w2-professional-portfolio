@@ -11,9 +11,10 @@ body {
 header {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
     padding: 30px;
     background-color: black;
+    box-sizing: border-box;
 }
 
 header h1 {
@@ -25,6 +26,14 @@ header h1 {
 header li {
     display: inline-block;
     margin: 20px;
+}
+
+section {
+    margin-left: -14px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 .about-me-contents img {
@@ -82,7 +91,7 @@ body {
 }
 
 h2 {
-    display: inline-block;
+    display: block;
     padding: 30px;
     border: 3px;
     border-style: groove;
@@ -93,6 +102,7 @@ h2 {
     justify-content: center;
     align-items: center;
     color:tomato;
+    font-weight: bold;
 }
 
 h3{
@@ -280,7 +290,7 @@ main {
     body {
         margin: 0;
         padding: 0;
-        width: 100%;
+        /* width: 100vw; */
     }
 
     header{
@@ -363,5 +373,13 @@ main {
     #contact-me li {
         margin: 30px;
     }
+
+    h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+
 
