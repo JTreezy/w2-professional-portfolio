@@ -4,6 +4,10 @@
     color: white;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -21,6 +25,18 @@ header h1 {
 header li {
     display: inline-block;
     margin: 20px;
+}
+
+.about-me-contents img {
+    border-radius: 30px;
+    margin: 30px;
+    width: 25%;
+    width: 500px;
+    height: 500px;
+}
+
+.about-me-contents p{
+    margin: 30px;
 }
 
 a {
@@ -104,6 +120,7 @@ main {
     justify-content: flex-start;
     gap: 30px;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .about-me-contents p{
@@ -146,7 +163,7 @@ main {
     padding: 30px;
     border: 3px;
     border-style: groove;
-    border-radius: 30px;
+    border-radius: 25px;
     border-color: rgba(196, 77, 41, 0.64);
     background: rgba(44, 43, 39, 0.7);
     box-sizing: border-box;
@@ -161,12 +178,13 @@ main {
     max-width: 100%;
     width: 500px;
     height: 500px;
+    opacity: 0.3;
 
 }
 
 .work-card h4 {
     font-size: 30px;
-    position: absolute;
+    position: relative;
     z-index: 1;
     bottom: 10px;
     left: 10px;
@@ -216,6 +234,25 @@ main {
     border-bottom: 5px;
 }
 
+.work-card:hover {
+    background-color: salmon;
+    filter: invert(0);
+    transition: all 2s ease;
+}
+
+.work-card p:hover {
+    color:royalblue;
+}
+
+.work-card h4:hover {
+    color: royalblue;
+}
+
+.work-card img:hover{
+    opacity: 1;
+    transition: opacity 2s ease; 
+}
+
 @media screen and (max-width: 1258px) {
     header{
         opacity: 0.5;
@@ -228,7 +265,7 @@ main {
     .work-card h4{
         font-size: 25px;
         height: 60px;
-        position: absolute;
+        position: relative;
         z-index: 1;
         top: 10px;
         left: 10px;
@@ -265,6 +302,10 @@ main {
     }
 
     #primary {
+        width: 90%;
+    }
+
+    .about-me-contents img{
         width: 90%;
     }
 
@@ -307,6 +348,11 @@ main {
     #primary img{
         width: 500px;
         height: 500px;
+    }
+
+    .about-me-contents img{
+        width: 250px;
+        height: 250px;
     }
 
     .work-card {
