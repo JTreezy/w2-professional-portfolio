@@ -4,10 +4,13 @@
     color: white;
 }
 
+/*hides the horizontal bar at the bottom*/
 body {
     overflow-x: hidden;
 }
 
+
+/*to give a navigation bar that can be viewed throughout the page*/
 header {
     position: fixed;
     width: 100%;
@@ -17,6 +20,7 @@ header {
     box-sizing: border-box;
 }
 
+/*to display name at the top left*/
 header h1 {
     display: inline-block;
     font-size: 32px;
@@ -70,6 +74,25 @@ nav a:hover {
     box-shadow: 12px 5px 2px 1px gold;
 }
 
+.container {
+    display: block;
+}
+
+.container li{
+    margin: 5px;
+}
+
+.container li:hover {
+    font-size: 1.1rem;
+    color: violet;
+    transition: all 2s ease;
+    color:rgb(68, 0, 255);
+    border-radius: 10px;
+    background-color:aquamarine;
+    padding: 10px 10px;
+    box-shadow: 12px 5px 2px 1px gold;
+}
+
 h3:hover{
     border-bottom: 2x solid black;
     border-radius: 10px;
@@ -79,6 +102,7 @@ h3:hover{
     transition: all 2s ease;
 }
 
+/*to have an all-encompassing background*/
 body {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRucRqyE9f4Ymn-U_YD_bqscy5KQAaHPBr4gQ&usqp=CAU");
     background-size:cover;
@@ -112,7 +136,6 @@ h3{
 }
 
 main {
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -149,6 +172,8 @@ main {
 #work h2{
     display: flex;
     justify-content: center;
+    padding: 30px;
+    margin-left: 50px;
 }
 
 .work-contents {
@@ -162,6 +187,7 @@ main {
     max-width: 100%;
 }
 
+/* to have it the size of its container but also have a minimum size it can be*/
 #primary img {
     width: 100%;
     width: 1000px;
@@ -211,6 +237,21 @@ main {
     height: 100px;
 }
 
+li.underline {
+    display: block;
+    padding: 30px;
+    border: 3px;
+    border-style: groove;
+    border-radius: 30px;
+    border-color: rgba(196, 77, 41, 0.64);
+    background: rgba(44, 43, 39, 0.7);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    color:tomato;
+    font-weight: bold;
+}
+
 .contact-me-title {
     display: flex;
     justify-content: flex-end;
@@ -239,7 +280,7 @@ main {
 
 #contact-me {
     font-size: 20px;
-    display: inline-block;
+    display: flex;
     list-style-type: none;
     border-bottom: 5px;
 }
@@ -250,20 +291,26 @@ main {
     transition: all 2s ease;
 }
 
+/*makes cursor turn into a pointer finger instead of just the mouse*/
 .work-card p:hover {
     color:royalblue;
+    cursor: pointer;
 }
 
 .work-card h4:hover {
     color: royalblue;
+    cursor: pointer;
 }
 
+/*puts focus on the img when hovered*/
 .work-card img:hover{
     opacity: 1;
-    transition: opacity 2s ease; 
+    transition: opacity 2s ease;
+    cursor: pointer; 
 }
 
 @media screen and (max-width: 1258px) {
+    /* makes it so that you can read the page under the navigation bar*/
     header{
         opacity: 0.5;
     }
@@ -283,6 +330,7 @@ main {
 }
 
 @media screen and (max-width: 992px) {
+    /* makes it so that you can read the page under the navigation bar*/
     header{
         opacity: 0.3;
     }
@@ -329,7 +377,6 @@ main {
 
     #contact-me ul li {
         display: table-row;
-        text-align: left;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -340,16 +387,18 @@ main {
 }
 
 @media screen and (max-width: 501px) {
+    /* makes it so that you can read the page under the navigation bar*/
     header{
         opacity: 0.1;
     }
-
 
     #work{
         display: flex;
         flex-direction: column;
         width: 90%;
     }
+
+
 
     #primary {
         width: 90%;
@@ -360,11 +409,14 @@ main {
         height: 500px;
     }
 
+
+    /* to size photo but not take away from work cards*/
     .about-me-contents img{
         width: 250px;
         height: 250px;
     }
 
+    /*to have the cards stack one on top of each other*/
     .work-card {
         width: 90%;
         max-width: 90%;
@@ -379,6 +431,7 @@ main {
         justify-content: center;
         align-items: center;
     }
+
 }
 
 
