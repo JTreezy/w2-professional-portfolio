@@ -375,7 +375,7 @@ li.underline {
     }
 
     .work-card {
-        width: 48%;
+        width: 40%;
     }
 
     .work-card p {
@@ -390,6 +390,19 @@ li.underline {
     #contact-container ul {
         padding: 20px;
     }
+
+    #primary img{
+        width: 500px;
+        height: 500px;
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .work-card {
+        width: 90%;
+        max-width: 90%;
+    }
+
 }
 
 
@@ -405,20 +418,27 @@ li.underline {
         width: 90%;
     }
 
-
-
-    #primary {
-        width: 90%;
+    #primary h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
     }
 
     #primary img{
-        width: 500px;
-        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        
     }
 
 
     /* to size photo but not take away from work cards*/
     .about-me-contents img{
+        width: 250px;
+        height: 250px;
         width: 250px;
         height: 250px;
     }
@@ -427,8 +447,14 @@ li.underline {
     .work-card {
         width: 90%;
         max-width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: left;
     }
 
+    .work-card p {
+        font-size: 16px;
+    }
 }
 
 
