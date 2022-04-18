@@ -180,8 +180,8 @@ main {
 /* to have it the size of its container but also have a minimum size it can be*/
 #primary img {
     width: 100%;
-    width: 1300px;
-    height: 1300px;
+    width: 1000px;
+    height: 1000px;
 }
 
 
@@ -205,8 +205,8 @@ main {
 .work-card img {
     border-radius: 30px;
     max-width: 100%;
-    width: 600px;
-    height: 700px;
+    width: 400px;
+    height: 500px;
     opacity: 0.3;
 
 }
@@ -269,8 +269,17 @@ li.underline {
     box-sizing: border-box;
 }
 
+#contact-me ul {
+    border: 3px solid gold;
+    padding: -20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color: orange;
+}
+
 #contact-me li {
     margin: 30px;
+    text-shadow: 2px 2px 8px black;
 }
 
 #contact-me {
