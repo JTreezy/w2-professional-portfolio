@@ -280,6 +280,7 @@ li.underline {
 #contact-me li {
     margin: 30px;
     text-shadow: 2px 2px 8px black;
+    text-align: center;
 }
 
 #contact-me {
@@ -381,16 +382,16 @@ li.underline {
         right: 35%;
     }
 
-    #contact-me ul li {
-        display: table-row;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    #contact-container ul li {
+        margin-bottom: 30px;
+
     }
 
-    #contact-me li {
-        margin: 30 0px;
+    #contact-container ul {
+        padding: 20px;
     }
 }
+
 
 @media screen and (max-width: 501px) {
     /* makes it so that you can read the page under the navigation bar*/
@@ -428,9 +429,6 @@ li.underline {
         max-width: 90%;
     }
 
-    #contact-container ul li {
-        margin-bottom: 30px;
-    }
 }
 
 
